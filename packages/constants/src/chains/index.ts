@@ -26,12 +26,14 @@ import { swanmainnet } from "./swanmainnet"
 import { bitfinitytestnet } from "./bitfinitytestnet"
 import { ternoatestnet } from "./ternoatestnet"
 import { taikomainnet } from "./taikomainnet"
+import { dynastymainnet } from "./dynasty"
 import { gravityalpha } from "./gravityalpha"
 import { fireChain } from "./5irechain"
 import { rootstock } from "./rootstock"
 import { linea } from "./linea"
 
 export const chainMap = {
+  dynastymainnet,
   core,
   bsc,
   bob,
@@ -72,6 +74,7 @@ export const getChain = (chainId: number) => {
 }
 
 export enum ChainId {
+  DYNASTY = dynastymainnet.id,
   CORE = core.id,
   BLAST = blast.id,
   NEON = neon.id,
